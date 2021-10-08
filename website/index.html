@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>weather journal</title>
+</head>
+
+<body>
+  <header>
+    <h1>Weather Journal App</h1>
+  </header>
+  <section class="form">
+    <form>
+      <input type="text" name="Zipcode" id="zipCode" placeholder="Enter Zipcode here">
+      <input type="text" name="feeling" id="feeling" placeholder="How are you feeling today?">
+      <input type="submit" value="Generate" id="generate">
+    </form>
+  </section>
+
+  <section class="weather">
+    <img src="./images/icon.png" style="display: block;">
+    <div style="display: flex;justify-content: space-around; align-items: center;">
+    <div class="left">
+      <h1 class="temperaure">
+        36 F| 17 C
+      </h1>
+      <span class="date">Friday 22 2</span>
+      <span class="feeling">happy</span>
+    </div>
+  </div>
+
+  </section>
+ <script src="./app.js"></script>
+</body>
+
+</html>
