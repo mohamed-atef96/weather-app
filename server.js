@@ -20,16 +20,16 @@ app.use(express.static('website'));
 // Setup Server
 app.listen(3000,()=>{console.log('server is running at port 3000')})
 
-let projectData = [];
+let projectData = {};
 
 app.get('/all',async(req,res)=>{
     res.status(200).json(projectData)
-    projectData = [];
+    // projectData = [];
 })
 
 app.post('/add',(req,res)=>{
-    const {temperature,date,feeling} = req.body;
-    projectData.push({tempe:temperature,date:date,feeling:feeling});
-    console.log(projectData)
-    res.status(200).json({msg:'added successfully'});
+    projectData.date = req.body.date;
+    projectData.temp = req.body.temp;
+    projectData.content = req.body.content;
+    res.send({ msg: "data posted successfully" });
 })

@@ -60,7 +60,7 @@ input[type="submit"]{
 }
 
 .weather{
-    width: 25%;
+    width: 35%;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -80,6 +80,7 @@ input[type="submit"]{
     -moz-transition: transform .3s ease-in-out;
     -ms-transition: transform .3s ease-in-out;
     -o-transition: transform .3s ease-in-out;
+    opacity: 0;
 }
 .left ,.right{
     display: flex;
@@ -90,8 +91,8 @@ input[type="submit"]{
     line-height: 70px;
     font-size: 20px;
 }
-.temperaure,.city{
-    font-size: 60px;
+.temperaure{
+    font-size: 40px;
     font-weight: 100;
     color: #fff;
 }
